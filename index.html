@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-calendar2-heart"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3Zm2 .5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H3Zm5 4.493c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+          />
+        </svg>
+        BMIC
+      </div>
+      <div class="nav-section">
+        <a href="#">About BMI</a>
+      </div>
+    </header>
+    <main>
+      <div class="left-section"></div>
+      <div class="right-section">
+        <button id="btn1" class="bmi" type="button">Body mass index<br> Calculator</button>
+        <button id="btn2" class="bmi"> Body Temperature</button>
+        <button id="btn3" class="bmi"> Body Pressure</button>
+      </div>
+      <!-- modal section -->
+    </main>
+    <section id="myModals" class="myModals">
+      <!-- first modal -->
+      <div id="modal1" class="modal1">
+       
+        <div id="modalBmi">
+          <span id="close">&times;</span>
+          <div id="bmiads">
+            <h2>simple health tip:</h2>
+            <ol>
+              <li>Drink alot of water</li>
+              <li>Priotize fruits over softdrinks</li>
+              <li>Avoid smoking/ taking of Alchol</li>
+              <li>Excercise often</li>
+            </ol>
+
+          </div>
+          <div id="bmiinput1">
+            <div class="modalBmi-box">
+              <label for="weight">Your Weight:</label><br>
+              <input type="text" id="weight" placeholder="Kg" />
+            </div>
+            <div class="modalBmi-box">
+              <label for="height">Your Height:</label><br>
+              <input type="text" id="height" placeholder="meters" />
+            </div>
+            <button id="modal1btn" onclick="calcBmi()">Check my BMI</button>
+            <h2 id="bmiresult"></h2>
+          </div>
+          </div>
+         
+        </div>
+
+      </div>
+      <!-- second modal -->
+      <div id="modal2" class="modal"></div>
+      <!-- third modal -->
+      <div id="modal3" class="modal"></div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
